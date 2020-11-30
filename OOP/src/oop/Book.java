@@ -6,6 +6,10 @@ public class Book {
 	void setNumberOfPages(int numberOfPages) {
 		this.numberOfPages = numberOfPages;
 	}
+
+	int getNumberOfPages() {
+		return this.numberOfPages;
+	}
 	void titleOne() {
 		System.out.println("title of first book: Art of Computer Programming");
 	}
