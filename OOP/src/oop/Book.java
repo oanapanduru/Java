@@ -4,7 +4,9 @@ public class Book {
 	private int numberOfPages;
 
 	void setNumberOfPages(int numberOfPages) {
-		this.numberOfPages = numberOfPages;
+		if(numberOfPages > 0) {
+			this.numberOfPages = numberOfPages;
+		}
 	}
 
 	int getNumberOfPages() {
@@ -20,5 +22,13 @@ public class Book {
 
 	void titleThree() {
 		System.out.println("title of the third book: Clean Code");
+	}
+
+	public void increaseNumberOfPages(int howMuch) {
+		setNumberOfPages(this.numberOfPages + howMuch);
+	}
+
+	public void decreaseNumberOfPages(int howMuch) {
+		setNumberOfPages(this.numberOfPages - howMuch);
 	}
 }

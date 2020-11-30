@@ -4,9 +4,9 @@ public class MotorBike {
 	private int speed;// member variable
 
 	void setSpeed(int speed) {// local variable
-		this.speed = speed;
-		System.out.println(speed);
-		System.out.println(this.speed);
+		if (speed > 0) {
+			this.speed = speed;
+		}
 
 
 	}
@@ -18,6 +18,14 @@ public class MotorBike {
 
 	void start() {
 		System.out.println("motor bike is starting");
+	}
+
+	public void increaseSpeed(int howMuch) {
+		setSpeed(this.speed + howMuch);
+	}
+
+	public void decreaseSpeed(int howMuch) {
+		setSpeed(this.speed - howMuch);
 	}
 }
 	
