@@ -1,6 +1,11 @@
 package oop;
 
 public class Book {
+	private int numberOfPages;
+
+	void setNumberOfPages(int numberOfPages) {
+		this.numberOfPages = numberOfPages;
+	}
 	void titleOne() {
 		System.out.println("title of first book: Art of Computer Programming");
 	}
