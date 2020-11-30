@@ -4,8 +4,11 @@ public class MotorBikeRunner {
 
 	public static void main(String[] args) {
 		// creating new instances
-		MotorBike Ducati = new MotorBike();
-		MotorBike Honda = new MotorBike();
+		MotorBike Ducati = new MotorBike(100);
+		System.out.println(Ducati.getSpeed());
+		MotorBike Honda = new MotorBike(100);
+		System.out.println(Honda.getSpeed());
+		MotorBike Sukuki = new MotorBike();
 
 		Ducati.start();
 		Honda.start();

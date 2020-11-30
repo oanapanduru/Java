@@ -3,6 +3,10 @@ package oop;
 public class Book {
 	private int numberOfPages;
 
+	Book(int numberOfpages) {
+		this.numberOfPages = numberOfPages;
+	}
+
 	void setNumberOfPages(int numberOfPages) {
 		if(numberOfPages > 0) {
 			this.numberOfPages = numberOfPages;

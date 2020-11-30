@@ -4,9 +4,9 @@ public class bookReader {
 
 	public static void main(String[] args) {
 		// creating new instances
-		Book firstBook = new Book();
-		Book secondBook = new Book();
-		Book thirdBook = new Book();
+		Book firstBook = new Book(100);
+		Book secondBook = new Book(100);
+		Book thirdBook = new Book(100);
 
 		firstBook.titleOne();
 		secondBook.titleTwo();

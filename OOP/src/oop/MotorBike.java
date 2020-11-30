@@ -3,6 +3,14 @@ package oop;
 public class MotorBike {
 	private int speed;// member variable
 
+	MotorBike() {
+		this(5);
+	}
+
+	MotorBike(int speed){
+		this.speed = speed;
+	}
+
 	void setSpeed(int speed) {// local variable
 		if (speed > 0) {
 			this.speed = speed;
