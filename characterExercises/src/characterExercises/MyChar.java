@@ -31,16 +31,16 @@ public class MyChar {
 			return false;
 		}
 			
-		}
+	}
 
 		boolean isConsonante() {
 			boolean testing = isVowel();
 			boolean testing2 = isAlphabet();
-			if (testing == true && testing2 == true) {
-				return false;
+			if (testing == false && testing2 == true) {
+				return true;
 			}
 			else {
-				return true;
+				return false;
 			}
 		}
 
@@ -52,13 +52,13 @@ public class MyChar {
 			}
 		}
 
-		void alphabet() {
+		static void alphabet() {
 			for (char i = 97; i <= 122; i++) {
 				System.out.println(i);
 			}
 		}
 
-		void alphabetUpper() {
+		static void alphabetUpper() {
 			for (char i = 65; i <= 90; i++) {
 				System.out.println(i);
 			}

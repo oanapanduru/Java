@@ -9,8 +9,9 @@ public class MyCharRunner {
 		System.out.println(character.isDigit());
 		System.out.println(character.isConsonante());
 		System.out.println(character.isAlphabet());
-		character.alphabet();
-		character.alphabetUpper();
+		MyChar.alphabet();
+		MyChar.alphabetUpper();
+
 	}
 
 }
