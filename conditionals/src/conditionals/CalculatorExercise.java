@@ -31,13 +31,13 @@ public class CalculatorExercise {
 		System.out.print("Enter operation:  ");
 		this.operation = scanner.nextInt();
 		if (this.operation == 1) {
-			System.out.println("the choosen operation is: add");
+			System.out.println("the chosen operation is: add");
 		} else if (this.operation == 2) {
-			System.out.println("the choosen operation is: substract");
+			System.out.println("the chosen operation is: substract");
 		} else if (this.operation == 3) {
-			System.out.println("the choosen operation is: multiply");
+			System.out.println("the chosen operation is: multiply");
 		} else if (this.operation == 4) {
-			System.out.println("the choosen operation is: divide");
+			System.out.println("the chosen operation is: divide");
 		}
 		else {
 			System.out.println("invalid input");
