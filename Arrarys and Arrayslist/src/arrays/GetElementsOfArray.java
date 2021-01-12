@@ -4,12 +4,12 @@ public class GetElementsOfArray {
 
 	public static void main(String[] args) {
 		String[] var = {"ala", "bala", "portocala"};
-		for (String element : var) {
-			System.out.println(element);
+		for (int i = 0; i < var.length; i++) {
+			System.out.println(var[i]);
 		}
 		//using for-each;
-		for (String i : var) {
-			System.out.println(i);
+		for(String x :var) {
+			System.out.println(x);
 		}
 
 	}
