@@ -26,7 +26,7 @@ public class Student {
 	}
 
 	int getMax() {
-		int max = this.marks[0];
+		int max = 0;
 		for (int i : this.marks) {
 			if (max < i) {
 				max = i;
