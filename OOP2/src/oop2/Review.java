@@ -5,7 +5,7 @@ public class Review {
 	private String review;
 
 	public Review(int rating, String review) {
-		super();
+		// super();
 		this.rating = rating;
 		this.review = review;
 	}
