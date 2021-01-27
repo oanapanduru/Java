@@ -22,6 +22,6 @@ public class Customer {
 
 	@Override
 	public String toString() {
-		return String.format("name - %s, address - %s", name, address);
+		return String.format("name - %s, address - %s ", name, address);
 	}
 }
