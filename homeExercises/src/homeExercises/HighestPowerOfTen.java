@@ -17,7 +17,7 @@ public class HighestPowerOfTen {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(highestPowerOfTen(405));
+		System.out.println(highestPowerOfTen(59994));
 	}
 
 }
