@@ -23,7 +23,7 @@ public class AdsReport {
 			int clicks =  Integer.parseInt(myArray[i][3]);
 			if(map.containsKey(platform)) {
 				HashMap<String, Integer> little = map.get(platform);
-				if(little.containsKey(type)) {
+				if(little.containsKey(type)) { 
 					little.put(type, little.get(type)+ clicks);
 				}
 				else {
