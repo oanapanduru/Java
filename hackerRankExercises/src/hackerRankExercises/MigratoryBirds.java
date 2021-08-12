@@ -48,7 +48,7 @@ public class MigratoryBirds {
 			}
 		}
 		// System.out.println(maxVal);
-		System.out.println(" ");
+
 		return type;
 	}
 
