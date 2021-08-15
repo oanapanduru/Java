@@ -36,7 +36,7 @@ public class Union {
 				idx++;
 			}
 		}
-		//System.out.println(count);
+		// System.out.println(count);
 		System.out.println(Arrays.toString(result));
 	}
 
