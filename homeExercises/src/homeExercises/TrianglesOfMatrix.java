@@ -18,9 +18,8 @@ public class TrianglesOfMatrix {
 					System.out.print(a[i][j]);
 				}
 
-				if (i > j && i + j > a.length - 1) { 
-					
-				
+				if (i > j && i + j > a.length - 1) {
+
 					sum3 = sum3 + a[i][j];
 					System.out.print(" ");
 					System.out.print(a[i][j]);
