@@ -38,20 +38,19 @@ public class SalesByMatch {
 		int pairs = 0;
 		int count = 0;
 		boolean found = false;
-
 		List<Integer> number = new ArrayList<Integer>();
 		for (int i = 0; i < ar.size(); i++) {
 			int sock = ar.get(i);
-			//count = 0;
-			for (int j = i+1 ; j < ar.size(); j++) {
-				if (ar.get(j)==sock) {
+			// count = 0;
+			for (int j = i + 1; j < ar.size(); j++) {
+				if (ar.get(j) == sock) {
 					count++;
 					number.add(count);
-					//found = true;
+					// found = true;
 				}
 			}
 		}
-	
+
 		for (int i = 0; i < ar.size(); i++) {
 			System.out.println(ar.get(i));
 		}
