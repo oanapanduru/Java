@@ -39,23 +39,28 @@ public class SalesByMatch {
 		int count = 0;
 		boolean found = false;
 		List<Integer> number = new ArrayList<Integer>();
+		for(int i =0; i<=100; i++) {
+			number.add(i, 0);
+		}
 		for (int i = 0; i < ar.size(); i++) {
 			int sock = ar.get(i);
-			// count = 0;
-			for (int j = i + 1; j < ar.size(); j++) {
-				if (ar.get(j) == sock) {
-					count++;
-					number.add(count);
-					// found = true;
-				}
-			}
+			number.set(sock, number.get(sock)+1);
 		}
 
 		for (int i = 0; i < ar.size(); i++) {
 			System.out.println(ar.get(i));
 		}
-		for (int i = 0; i < number.size(); i++) {
-			System.out.println(number.get(i));
+	//	for (int i = 0; i < number.size(); i++) {
+		//	System.out.println(number.get(i));
+		//}
+		for (int i : number) {
+
+			if (i % 2 == 0) {
+				pairs = pairs + i / 2;
+			} else {
+				pairs = pairs + (i - 1) / 2;
+			}
+			//System.out.println( i);
 		}
 		return pairs;
 	}
@@ -74,7 +79,7 @@ public class SalesByMatch {
 		socks.add(10);
 		socks.add(20);
 		// System.out.println(sockMerchant(9, socks));
-		sockMerchant2(9, socks);
+		System.out.println(sockMerchant2(9, socks));
 	}
 
 }
