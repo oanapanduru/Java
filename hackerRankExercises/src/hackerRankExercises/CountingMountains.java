@@ -65,7 +65,8 @@ public class CountingMountains {
 		// System.out.println(countingMountains("UUDDUD"));
 		// System.out.println(countingMountains2("DDUUDDUDUUUD"));
 		//System.out.println(countingMountains2("DDUDUDUDUU"));
-		System.out.println(countingMountains2("DDUUUUDDDDUUDD"));
+		//System.out.println(countingMountains2("DDUUUUDDDDUUDD"));
+		System.out.println(countingMountains2("UUUUDDDDUUDD"));
 	}
 
 }
