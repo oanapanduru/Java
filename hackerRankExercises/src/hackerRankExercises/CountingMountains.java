@@ -43,9 +43,9 @@ public class CountingMountains {
 			}
 			if (countD > countU) {
 				countD = 0;
-				//i++;
+				// i++;
 			}
-			if (countD == countU  && (countD>0 && countU>0)) {
+			if (countD == countU && (countD > 0 && countU > 0)) {
 				count++;
 				countD = 0;
 				countU = 0;
@@ -61,11 +61,11 @@ public class CountingMountains {
 		// TODO Auto-generated method stub
 		// 8
 		// UDDDUDUU
-		// System.out.println(countingMountains("DDUUDDUDUUUD"));
-		// System.out.println(countingMountains("UUDDUD"));
-		// System.out.println(countingMountains2("DDUUDDUDUUUD"));
-		//System.out.println(countingMountains2("DDUDUDUDUU"));
-		//System.out.println(countingMountains2("DDUUUUDDDDUUDD"));
+		System.out.println(countingMountains("DDUUDDUDUUUD"));
+		System.out.println(countingMountains("UUDDUD"));
+		System.out.println(countingMountains2("DDUUDDUDUUUD"));
+		System.out.println(countingMountains2("DDUDUDUDUU"));
+		System.out.println(countingMountains2("DDUUUUDDDDUUDD"));
 		System.out.println(countingMountains2("UUUUDDDDUUDD"));
 	}
 
