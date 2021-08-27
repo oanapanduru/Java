@@ -15,6 +15,7 @@ public class ViralAdvertising {
 			
 			
 		}
+		
 		return temp;
 
 	}
@@ -25,6 +26,7 @@ public class ViralAdvertising {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 			System.out.println(viralAdvertising(5));
+
 	}
 
 }
