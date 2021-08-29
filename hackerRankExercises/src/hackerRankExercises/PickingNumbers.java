@@ -47,7 +47,7 @@ public class PickingNumbers {
 		
 		int maxCount = 0;
 		for (int i = 0; i < a.size() - 1; i++) {
-			int count = 0;
+			int count = 1;
 			int j = i + 1;
 			while(j < a.size() && Math.abs(a.get(j) - a.get(i)) <= 1) {
 				count++;
