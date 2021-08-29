@@ -22,27 +22,34 @@ public class MagicSquare {
 		s.get(2).add(2);
 		formingMagicSquare(s);
 	}
-	
+
 	public static int formingMagicSquare(List<List<Integer>> s) {
-	    int magicSum = 45;
-	    int costLine = 0;
-	    int costCol = 0;
-	    int cost = 0;
-	    for(int i = 0; i < s.size(); i++) {
-	    	int lineSum = 0;
-	    	int colSum = 0;
-	    	for(int j = 0; j < s.size(); j++) {
-	    		lineSum = lineSum + s.get(i).get(j);
-	    		colSum = colSum + s.get(j).get(i);
-	    	}
-	    	//System.out.println("Sum of line " + i + ": " + lineSum);
-	    	//System.out.println("Sum of col " + i + ": " + colSum);
-	    	costLine = costLine + Math.abs(lineSum - 15);
-	    	costCol = costCol + Math.abs(colSum - 15);
-	    	cost = cost + (15 - costLine) + (15 - costCol);
-	    }
-		return Math.abs(cost);
+		int[][][] ms = { 
+				{ { 8, 1, 6 }, { 3, 5, 7 }, { 4, 9, 2 } }, 
+				{ { 6, 1, 8 }, { 7, 5, 3 }, { 2, 9, 4 } },
+				{ { 4, 9, 2 }, { 3, 5, 7 }, { 8, 1, 6 } }, 
+				{ { 2, 9, 4 }, { 7, 5, 3 }, { 6, 1, 8 } },
+				{ { 8, 3, 4 }, { 1, 5, 9 }, { 6, 7, 2 } }, 
+				{ { 4, 3, 8 }, { 9, 5, 1 }, { 2, 7, 6 } },
+				{ { 6, 7, 2 }, { 1, 5, 9 }, { 8, 3, 4 } }, 
+				{ { 2, 7, 6 }, { 9, 5, 1 }, { 4, 3, 8 } }, 
+				};
+
+		int minCost = 81;
+		for (int k = 0; k < ms.length; k++) {
+			int cost = 0;
+			int[][] thisM = ms[k];
+			for (int i = 0; i < s.size(); i++) {
+				for (int j = 0; j < s.size(); j++) {
+					cost = cost + Math.abs(s.get(i).get(j) - thisM[i][j]);
+				}
+			}
+			if(cost < minCost) {
+				minCost = cost;
+			}
+		}
+		System.out.println(minCost);
+		return Math.abs(minCost);
 	}
-	
 
 }
