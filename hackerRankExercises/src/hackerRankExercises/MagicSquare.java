@@ -56,6 +56,7 @@ public class MagicSquare {
 		int minCost = Math.abs(5 - s.get(1).get(1));
 		int colCost = Math.abs(10 - Math.abs(s.get(0).get(1) + s.get(2).get(1)));
 		int rowCost = Math.abs(10 - Math.abs(s.get(1).get(0) + s.get(1).get(2)));
+		
 		int pdCost = Math.abs(10 - Math.abs(s.get(0).get(0) + s.get(2).get(2)));
 		int sdCost = Math.abs(10 - Math.abs(s.get(0).get(2) + s.get(2).get(0)));
 		minCost = minCost + colCost + rowCost + pdCost + sdCost;

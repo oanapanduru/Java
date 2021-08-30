@@ -14,9 +14,10 @@ public class JumpingOnClouds {
         	c[i] = in.nextInt();
         }
         int e = 100;
-        int currentCloud = 0;
+//        int currentCloud = 0;
         boolean hasFinished = false;
-        while(!hasFinished) {
+//        while(!hasFinished) {
+        for(int currentCloud = 0; !hasFinished;) {
         	e--;
         	currentCloud = (currentCloud + k) % n;
         	if(c[currentCloud] == 1) {
