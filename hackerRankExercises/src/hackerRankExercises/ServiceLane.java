@@ -44,8 +44,8 @@ public class ServiceLane {
     public static void main(String[] args) {
         List<List<Integer>> cases = new ArrayList<>();
         ArrayList<Integer> first = new ArrayList<>();
-        first.add(1);
-        first.add(2);
+        first.add(0);
+        first.add(3);
         cases.add(first);
         ArrayList<Integer> second = new ArrayList<>();
         second.add(1);
