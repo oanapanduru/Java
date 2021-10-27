@@ -15,13 +15,21 @@ public class ServiceLane {
             int number = scanner.nextInt();
             widths.add(number);
         }
-        int min = Integer.MAX_VALUE;
+//        for(Integer I:widths){
+//            System.out.println(I);
+//        }
         for (int i = 0; i < cases.size(); i++) {
             List<Integer> sublist = new ArrayList<>();
-            for (int j = (cases.get(i).get(0))-1; j <=(cases.get(i).get(1))-1; j++) {
+            for (int j = cases.get(i).get(0); j <= cases.get(i).get(1); j++) {
+//                System.out.println("this is j:"+j);
                 sublist.add(widths.get(j));
-//                System.out.println(widths.get(j));
+//                System.out.println("this is widths.get(j) " + widths.get(j));
+
             }
+//            for (Integer in : sublist) {
+////                System.out.println("this is sublist" + in);
+//            }
+            int min = Integer.MAX_VALUE;
             for (int k = 0; k < sublist.size(); k++) {
                 if (sublist.get(k) < min) {
                     min = sublist.get(k);
@@ -34,14 +42,14 @@ public class ServiceLane {
     }
 
     public static void main(String[] args) {
-        List<List<Integer>> cases= new ArrayList<>();
-        ArrayList<Integer> first= new ArrayList<>();
+        List<List<Integer>> cases = new ArrayList<>();
+        ArrayList<Integer> first = new ArrayList<>();
         first.add(1);
         first.add(2);
         cases.add(first);
-        ArrayList<Integer> second= new ArrayList<>();
+        ArrayList<Integer> second = new ArrayList<>();
+        second.add(1);
         second.add(2);
-        second.add(4);
         cases.add(second);
         System.out.println(serviceLane(4, cases));
     }
