@@ -14,7 +14,6 @@ public class CavityMap {
         for (int i = 0; i < grid.size(); i++) {
             map.add(grid.get(i));
         }
-
         for (int i = 1; i < grid.size() - 1; i++) {
             for (int j = 1; j < grid.get(0).length() - 1; j++) {
                 if (Integer.parseInt(Character.toString(grid.get(i).charAt(j))) >
