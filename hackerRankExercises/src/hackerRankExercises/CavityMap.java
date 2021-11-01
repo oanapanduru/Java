@@ -12,15 +12,7 @@ public class CavityMap {
 //        map.add(grid.get(0));
 //        map.add(grid.get(grid.size() - 1));
         for (int i = 0; i < grid.size(); i++) {
-            if (i == 0 ) {
-                map.add(grid.get(0));
-            }
-            else if(i == grid.size() - 1){
-                map.add(grid.get(grid.size() - 1));
-            }
-            else{
-                map.add(new String());
-            }
+            map.add(grid.get(i));
         }
 
         for (int i = 1; i < grid.size() - 1; i++) {
@@ -42,20 +34,15 @@ public class CavityMap {
                 ) {
 //                    StringBuilder sb = new StringBuilder();
                     String s;
-                    s = grid.get(i).substring(0, j) + "X" + grid.get(i).substring(j + 1);
+                    s = map.get(i).substring(0, j) + "X" + map.get(i).substring(j + 1);
 //                    sb = new StringBuilder(grid.get(i).substring(0, j) + "X" + grid.get(i).substring(j + 1));
 //                    map.add(i,sb.toString());
-                    map.add(i, s);
+                    map.set(i, s);
                 }
             }
         }
-        List<String> mapModified = new ArrayList<>();
-        for(String s:map){
-            if(!s.isEmpty()){
-                mapModified.add(s);
-            }
-        }
-        return mapModified;
+
+        return map;
     }
 
 
