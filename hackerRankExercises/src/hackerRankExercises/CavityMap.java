@@ -29,7 +29,6 @@ public class CavityMap {
                         &&
                         Integer.parseInt(Character.toString(grid.get(i).charAt(j))) >
                                 Integer.parseInt(Character.toString(grid.get(i).charAt(j - 1)))
-
                 ) {
 //                    StringBuilder sb = new StringBuilder();
                     String s;
