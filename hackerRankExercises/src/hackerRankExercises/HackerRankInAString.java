@@ -9,7 +9,6 @@ public class HackerRankInAString {
         if (s.length() < toBeMatched.length()) {
             return "NO";
         }
-
         int j = 0;
         for (int i = 0; i < s.length(); i++) {
             if (toBeMatched.charAt(j) == s.charAt(i)) {
