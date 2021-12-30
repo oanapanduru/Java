@@ -1,4 +1,4 @@
-package practice;
+package hackerRankExercises;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +29,7 @@ public class GenomicRangeQuery {
                     min = impact;
                 }
             }
-           result[i]=min;
+            result[i] = min;
 
         }
         return result;
